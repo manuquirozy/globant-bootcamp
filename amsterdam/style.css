@@ -1,0 +1,216 @@
+@import "compass/css3";
+
+*{
+    color:dimgray;
+    font-family: "Ubuntu Light";
+    font-weight: lighter;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+nav span{
+    margin: 0px 30px;
+}
+
+header{
+    background-color: ghostwhite;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 20px 60px 50px;
+    text-align: center;
+}
+
+.Image{
+    position: relative;
+}
+
+.Box{
+    font-size: 12px;
+    background-color: white;
+    width: 115px;
+    height: 85px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:77%;
+    left: 30%;
+
+}
+
+.Line{
+    width: 47%;
+    height: 2px;
+    background: black;
+    margin: 10px;
+}
+
+.Line2{
+    width: 47%;
+    height: 1px;
+    background: black;
+    margin-bottom: 15px;
+}
+
+.Container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.Fruit{
+    margin: 0px 50px;
+}
+
+article{
+    background-color: ghostwhite;
+    width: 480px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+}
+
+article h1{
+    font-size: 14px;
+}
+
+article p{
+    font-size: 14px;
+}
+
+aside p{
+    font-size: 11px;
+    display:block;
+    text-align: left;
+    align-self: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+aside{
+    width: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+aside h2, aside h3{
+    font-weight: bold;
+}
+
+aside :not(p){
+    text-align: center;
+    font-size: 14px;
+}
+
+
+footer{
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    margin: 0px;
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    margin: auto;
+}
+
+article img{
+    height: 350px;
+}
+
+.Form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Submit{
+    width: 100%;
+    background-color: darkslategrey;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.Amsterdam, .Autor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+mglass {
+    position:relative;
+    display:inline-block;
+    background: #fff;
+    border-radius: 30px;
+    height: 6px;
+    width: 6px;
+    border: 2px solid #888;
+
+
+&:after {
+     content: "";
+     height: 2px;
+     width: 6px;
+     background: #888;
+     position:absolute;
+     top:7px;
+     left:5px;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+ }
+}
+
+input{
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#email{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#dummy{
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+aside p:first-of-type {
+    margin-top: 10px;
+}
+
+aside p:last-of-type{
+    margin-bottom: 10px;
+}
