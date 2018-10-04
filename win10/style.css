@@ -1,0 +1,78 @@
+/*
+  Bg image: http://xinature.com/wp-content/uploads/2016/08/flowers-sunrise-purple-lavesnder-nature-lavender-sunset-lavendel-clouds-sky-field-flower-wallpaper-for-desktop-1920x1080.jpg
+  Cat image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxkKU5nAwXRBXkyQIUL4R_CN9hR1jpwmf4S7MUcTrw92-nWhb
+  Avatar: https://image.flaticon.com/icons/svg/146/146025.svg
+
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+  Colors:
+    orange: #e76022
+    blue: #00bcd4
+    red: #da312e
+    green: #61b812
+    yellow: #f1d445
+*/
+
+#Fondo{
+    background-image: url("http://xinature.com/wp-content/uploads/2016/08/flowers-sunrise-purple-lavesnder-nature-lavender-sunset-lavendel-clouds-sky-field-flower-wallpaper-for-desktop-1920x1080.jpg");
+    z-index: -1;
+    display: flex;
+
+}
+
+#Avatar{
+    height: 50px;
+}
+
+p{
+    color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.box{
+    height:50px;
+    width:50px;
+    display: inline-block;
+}
+
+.gato{
+    display:inline-block;
+}
+
+.azul{
+    background-color:#00bcd4;
+}
+
+.naranja{
+    background-color: #e76022
+}
+
+.rojo{
+    background-color:#da312e
+}
+
+.verde{
+    background-color:#61b812;
+}
+
+.amarillo{
+    background-color:#f1d445;
+}
+
+#grande{
+    width: 100px;
+}
+
+#gato{
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+}
+
+.contenedor{
+    width: 300px;
+}
+
+.contenedor2{
+    width: 150px;
+}
