@@ -1,0 +1,10 @@
+/*Basic page reset styles*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*
+  this is the font family that you need to use: font-family: 'Press Start 2P', cursive;
+*/
