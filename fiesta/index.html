@@ -8,45 +8,50 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <div class="clase" id="clase">Hello</div>
 
+    <div class="container">
+        <div id="Teclaq">Q</div>
+        <div id="Teclaw">W</div>
+        <div id="Teclae">E</div>
+        <div id="Teclar">R</div>
+        <div id="Teclat">T</div>
+        <div id="Teclay">Y</div>
+        <div id="Teclau">U</div>
+        <div id="Teclai">I</div>
+        <div id="Teclao">O</div>
+        <div id="Teclap">P</div>
+    </div>
+
+    <audio id="Audioq" src="sounds/fizzle.wav"></audio>
+    <audio id="Audiow" src="sounds/hat.wav" controls></audio>
+    <audio id="Audioe" src="sounds/kick.wav"></audio>
+    <audio id="Audior" src="sounds/snare.wav"></audio>
+    <audio id="Audiot" src="sounds/snarezz.wav"></audio>
+    <audio id="Audioy" src="sounds/synth.wav"></audio>
+    <audio id="Audiou" src="sounds/vox1.wav"></audio>
+    <audio id="Audioi" src="sounds/vox2.wav"></audio>
+    <audio id="Audioo" src="sounds/vox3.wav"></audio>
+    <audio id="Audiop" src="sounds/wood.wav"></audio>
     <script>
-            console.log("Hello World");
-            var nombre = "Manuela";
-            console.log(nombre);
-            //string, number, boolean, undefined, NaN, null, array (object), object, function
-            console.log(typeof(nombre));
-            var edades = [1,2];
-            var yo = {
-                //esto es un JSON
-                nombre: "Manuela",
-                apellido: "Quiroz"
-            };        
-            function saludar(){
-                return "Hola "+ nombre;
+        function mostrarLaTecla(tecla){
+            console.log("hola ", tecla.key, tecla.keyCode);
+            var miAudio = document.querySelector('#Audio'+tecla.key);
+            if (miAudio!==null){
+                miAudio.currentTime=0;
+                miAudio.play();
             }
-            //devuelve el tipo de dato de una variable
-            console.log(typeof(yo));
-            var miSaludo = saludar();
-            console.log(miSaludo);
-    
-            var a = 10;
-            var b = a; //solo se sobreescribe si los datos no son numbers, strings, booleans, undefined, null, NaN
-            a = 20;
-            console.log(b);
-    
-            var j = {nombre: "Sebas", apellido: "Gomez"};
-            var k = j;
-            j = "Juan";
-            console.log(j);
-            //accede al DOM 
-            document.querySelector(".clase").style ='color:red';
+            
+            var miTecla= document.querySelector('#Tecla'+tecla.key);
+            miTecla.style.backgroundColor='red';
+            miTecla.classList.add("presionada")
+            setTimeout( function(){
+                miTecla.style.backgroundColor='white';
+                miTecla.classList.add("liberada");
+            },2000)
+        }
+        document.addEventListener('keydown', mostrarLaTecla);
+        
 
-            var miClase = document.querySelector(".clase");
-
-            console.log((miClase));
-    
-    
-        </script>
+    </script>
 </body>
 </html>
