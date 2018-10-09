@@ -10,20 +10,20 @@
 <body>
 
     <div class="container">
-        <div id="Teclaq">Q</div>
-        <div id="Teclaw">W</div>
-        <div id="Teclae">E</div>
-        <div id="Teclar">R</div>
-        <div id="Teclat">T</div>
-        <div id="Teclay">Y</div>
-        <div id="Teclau">U</div>
-        <div id="Teclai">I</div>
-        <div id="Teclao">O</div>
-        <div id="Teclap">P</div>
+        <div id="Teclaq" class="Tecla"><span class="white"> Q</span>FIZZLE </div>
+        <div id="Teclaw" class="Tecla"><span class="white"> W</span>HAT </div>
+        <div id="Teclae" class="Tecla"><span class="white"> E</span>KICK </div>
+        <div id="Teclar" class="Tecla"><span class="white"> R</span>SNARE </div>
+        <div id="Teclat" class="Tecla"><span class="white"> T</span>SNAREZZ </div>
+        <div id="Teclay" class="Tecla"><span class="white"> Y</span>SYNTH </div>
+        <div id="Teclau" class="Tecla"><span class="white"> U</span>VOX1 </div>
+        <div id="Teclai" class="Tecla"><span class="white"> I</span>VOX2 </div>
+        <div id="Teclao" class="Tecla"><span class="white"> O</span>VOX3 </div>
+        <div id="Teclap" class="Tecla"><span class="white"> P</span>WOOD </div>
     </div>
 
     <audio id="Audioq" src="sounds/fizzle.wav"></audio>
-    <audio id="Audiow" src="sounds/hat.wav" controls></audio>
+    <audio id="Audiow" src="sounds/hat.wav" ></audio>
     <audio id="Audioe" src="sounds/kick.wav"></audio>
     <audio id="Audior" src="sounds/snare.wav"></audio>
     <audio id="Audiot" src="sounds/snarezz.wav"></audio>
@@ -42,15 +42,12 @@
             }
             
             var miTecla= document.querySelector('#Tecla'+tecla.key);
-            miTecla.style.backgroundColor='red';
             miTecla.classList.add("presionada")
             setTimeout( function(){
-                miTecla.style.backgroundColor='white';
-                miTecla.classList.add("liberada");
+                miTecla.classList.remove("presionada");
             },2000)
         }
-        document.addEventListener('keydown', mostrarLaTecla);
-        
+        document.addEventListener('keydown', mostrarLaTecla);        
 
     </script>
 </body>
