@@ -32,23 +32,7 @@
     <audio id="Audioi" src="sounds/vox2.wav"></audio>
     <audio id="Audioo" src="sounds/vox3.wav"></audio>
     <audio id="Audiop" src="sounds/wood.wav"></audio>
-    <script>
-        function mostrarLaTecla(tecla){
-            console.log("hola ", tecla.key, tecla.keyCode);
-            var miAudio = document.querySelector('#Audio'+tecla.key);
-            if (miAudio!==null){
-                miAudio.currentTime=0;
-                miAudio.play();
-            }
-            
-            var miTecla= document.querySelector('#Tecla'+tecla.key);
-            miTecla.classList.add("presionada")
-            setTimeout( function(){
-                miTecla.classList.remove("presionada");
-            },2000)
-        }
-        document.addEventListener('keydown', mostrarLaTecla);        
-
-    </script>
+    
+    <script src="main.js"></script>
 </body>
 </html>
