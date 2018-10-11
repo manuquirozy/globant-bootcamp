@@ -1,5 +1,4 @@
 function mostrarLaTecla(tecla){
-    console.log("hola ", tecla.key, tecla.keyCode);
     var miAudio = document.querySelector('#Audio'+tecla.key);
     if (miAudio!==null){
         miAudio.currentTime=0;
@@ -12,3 +11,4 @@ function mostrarLaTecla(tecla){
         },duracion)        }
 }
 document.addEventListener('keydown', mostrarLaTecla);        
+console.log("hola ", tecla.key, tecla.keyCode);
