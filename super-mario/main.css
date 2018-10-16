@@ -5,6 +5,48 @@
     list-style: none;
 }
 
+div{
+  background-image: url("images/mario_bross.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  display: block;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+
+ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 70vw;
+  margin: auto;
+  position: relative;
+  top: 20px;
+}
+
+ul li:first-child{
+  text-align: left;
+}
+
+li{
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+#Coin{
+  height: 25px;
+}
+
+#Mario{
+  height: 80px;
+  position: absolute;
+  top:20px;
+}
 /*
   this is the font family that you need to use: font-family: 'Press Start 2P', cursive;
 */
