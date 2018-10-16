@@ -1,0 +1,237 @@
+@import "compass/css3";
+
+*{
+    color:dimgray;
+    font-family: "Ubuntu Light";
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    font-size: 0.8rem;
+}
+
+img{
+    height: 10rem;
+    margin: auto auto 3rem;
+}
+
+/*MENU*/
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-weight: bold;
+    width: 100vw;
+    margin: 1rem 0;
+}
+
+nav span{
+  margin: 0 0.5rem;
+}
+
+/*MAGNIFYING GLASS*/
+.mglass {
+    position:relative;
+    display:inline-block;
+    background: #fff;
+    border-radius: 10rem;
+    height: 0.5rem;
+    width: 0.5rem;
+    border: 0.09rem solid dimgray;
+}
+.mglass:after {
+     content: "";
+     height: 0.1rem;
+     width: 0.3rem;
+     background: #888;
+     position:absolute;
+     top:0.5em;
+     left:0.3rem;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+ }
+
+ /*BANNER*/
+header{
+    background-color: ghostwhite;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 1rem 0 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.Image{
+    position: relative;
+}
+
+.Box{
+    font-size: 0.6rem;
+    background-color: white;
+    width: 7rem;
+    height: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:7rem;
+    left: 36vw;
+
+}
+
+.Line{
+    width: 47%;
+    height: 0.05rem;
+    background: black;
+    margin: 0.4rem;
+}
+
+/*ARTICLE*/
+.Container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+
+.Amsterdam, .Autor{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    background-color: ghostwhite;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+article h1{
+    font-size: 0.8rem;
+}
+
+article p{
+    font-size: 0.8rem;
+}
+
+
+h1{
+    text-align: center;
+}
+
+article img{
+    
+}
+
+/*ASIDE*/
+
+aside{
+    width: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+aside h2, aside h3{
+    font-weight: bold;
+}
+
+aside p{
+    font-size: 11px;
+    display:block;
+    text-align: left;
+    align-self: normal;
+    margin: 0;
+    padding: 0;
+}
+
+aside :not(p){
+    text-align: center;
+    font-size: 14px;
+}
+
+.Line2{
+    width: 47%;
+    height: 1px;
+    background: black;
+    margin-bottom: 15px;
+}
+
+
+.Form{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Submit{
+    width: 100%;
+    background-color: darkslategrey;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input{
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#email{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#dummy{
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+aside p:first-of-type {
+    margin-top: 10px;
+}
+
+aside p:last-of-type{
+    margin-bottom: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    padding: 100px;
+    display: block;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 750px) {
+
+}
+
+@media (min-width: 1000px) {
+
+}
+
+
+
