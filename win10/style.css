@@ -15,13 +15,14 @@
 
 #Fondo{
     background-image: url("http://xinature.com/wp-content/uploads/2016/08/flowers-sunrise-purple-lavesnder-nature-lavender-sunset-lavendel-clouds-sky-field-flower-wallpaper-for-desktop-1920x1080.jpg");
+    background-color: gray;
     z-index: -1;
     display: flex;
-
-}
-
-#Avatar{
-    height: 50px;
+    background-size: cover;
+    position: relative;
+    width: 930px;
+    height: 450px;
+    box-sizing: border-box;
 }
 
 p{
@@ -29,14 +30,13 @@ p{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.box{
-    height:50px;
-    width:50px;
-    display: inline-block;
-}
+/*BOX DEFINITION*/
 
-.gato{
-    display:inline-block;
+.box{
+    height:100px;
+    width:100px;
+    margin: 5px;
+    display: inline-block;
 }
 
 .azul{
@@ -44,11 +44,11 @@ p{
 }
 
 .naranja{
-    background-color: #e76022
+    background-color: #e76022;
 }
 
 .rojo{
-    background-color:#da312e
+    background-color:#da312e;
 }
 
 .verde{
@@ -60,19 +60,84 @@ p{
 }
 
 #grande{
-    width: 100px;
+    width: 200px;
 }
 
-#gato{
-    width: 100px;
-    height: 50px;
-    display: inline-block;
+/*IZQUIERDA*/
+
+#Start{
+    font-size: 40px;
+    position: relative;
+    top: -35px;
 }
 
-.contenedor{
-    width: 300px;
+#Izquierda{
+    height: 300px;
+    width: 550px;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
 }
 
-.contenedor2{
-    width: 150px;
+.Contenedor{
+    width: 550px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+.gato{
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBxkKU5nAwXRBXkyQIUL4R_CN9hR1jpwmf4S7MUcTrw92-nWhb");
+    background-size: cover;
+    display:inline-block;
+}
+
+/*DERECHA*/
+
+#Avatar{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#Nombre{
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+
+#Ciudad{
+    font-size: 12px;
+    position: relative;
+    top: -30px;
+    left: 40px;
+}
+
+#Derecha{
+    height: 300px;
+    width: 220px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+}
+
+.Contenedor2{
+    width: 220px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
