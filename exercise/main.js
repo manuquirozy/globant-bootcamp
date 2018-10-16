@@ -1,4 +1,4 @@
-let a = fetch('https://randomuser.me/api/?results=100');
+let a = fetch('https://randomuser.me/api/?results=10');
 let b= a.then(function(results){
     return results.json();
 }). then(here=>{
@@ -9,24 +9,24 @@ let b= a.then(function(results){
         const article=document.createElement('article');
         const fig= document.createElement('figure');
         const img=document.createElement('img');    
-        const figCap=document.createElement('figcaption');    
+        const figCap=document.createElement('figcaption');  
+        const buttonFav=document.createElement('button');  
+        const t=document.createTextNode("Favorite");
         img.src=author.picture.large;
         figCap.innerHTML=author.name.first+' '+author.name.last;  
         miSection.append(article);      
         article.append(fig);
+        article.classList.add(author.name.first);
         fig.append(img);
         fig.append(figCap);
-        article.addEventListener('click', (click)=>{
-            console.log(click);
-            const favarticle= document.createElement('article');
-            const favfig= document.createElement('figure');
-            const favimg=document.createElement('img');
-            const favfigCap=document.createElement('figcaption');  
-            favfig.innerHTML=click.path[0].outerHTML; 
-            favfigCap.innerHTML=click.path[1].innerText;   
-            miAside.append(favarticle);
-            favarticle.append(favfig);                
-            favfig.append(favfigCap);                         
+        fig.append(buttonFav);
+        buttonFav.append(t);
+        buttonFav.classList.add(author.name.first);
+        buttonFav.addEventListener('click', (click)=>{
+            console.log(click);  
+            const favArticle= document.querySelector("."+click.srcElement.className);
+            favArticle.classList.add("favorite");
+            miAside.append(favArticle);                
         })
     });
 });
