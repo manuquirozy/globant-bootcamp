@@ -12,6 +12,8 @@ let b= a.then(function(results){
         const figCap=document.createElement('figcaption');  
         const buttonFav=document.createElement('button');  
         const t=document.createTextNode("Favorite");
+        const buttonUndo=document.createElement('button');
+        const t2=document.createTextNode("Undo");
         img.src=author.picture.large;
         figCap.innerHTML=author.name.first+' '+author.name.last;  
         miSection.append(article);      
@@ -19,14 +21,23 @@ let b= a.then(function(results){
         article.classList.add(author.name.first);
         fig.append(img);
         fig.append(figCap);
-        fig.append(buttonFav);
         buttonFav.append(t);
         buttonFav.classList.add(author.name.first);
+        buttonUndo.append(t2);
+        buttonUndo.classList.add(author.name.first);
+        fig.append(buttonFav);
+        fig.append(buttonUndo);
         buttonFav.addEventListener('click', (click)=>{
-            console.log(click);  
-            const favArticle= document.querySelector("."+click.srcElement.className);
-            favArticle.classList.add("favorite");
+            console.log((click.path[3]).includes("aside"));
+            if(click.path[3]!=="hola"){
+                console.log("HOLA");
+            }
+            let favArticle= document.querySelector("."+click.srcElement.className);
             miAside.append(favArticle);                
+        })
+        buttonUndo.addEventListener('click', (click)=>{ 
+            let favArticle= document.querySelector("."+click.srcElement.className);
+            miSection.append(favArticle);                
         })
     });
 });
