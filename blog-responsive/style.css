@@ -12,7 +12,7 @@ body{
 
 img{
     height: 8rem;
-    margin: auto auto 3rem;
+    margin: auto auto -1.5rem;
 }
 
 /*MENU*/
@@ -70,16 +70,22 @@ header{
 
 .Box{
     font-size: 0.6rem;
+    text-align: center;
     background-color: white;
     width: 7rem;
     height: 5rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:5rem;
-    left: 35%;
+    display: block;
+    margin:auto;
+    position: relative;
+    top: -1.5rem;
+    z-index: 1;
+
+}
+
+.Box div:first-of-type{
+    margin-bottom: 0.2rem;
+    position: relative;
+    top: 40%;
 }
 
 .Line{
@@ -87,6 +93,10 @@ header{
     height: 0.05rem;
     background: black;
     margin: 0.4rem;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40%;
 }
 
 /*ARTICLE*/
@@ -105,11 +115,9 @@ header{
 
 article{
     background-color: ghostwhite;
-    width: 100vw;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    width: 90vw;
+    display: block;
+    margin: auto;
     padding: 0 3rem;
 }
 
@@ -127,17 +135,17 @@ h1{
 }
 
 article img{
-    height: 10rem;
+    height: 12.5rem;
+    display: block;
+    margin: auto;
 }
 
 /*ASIDE*/
 
 aside{
-    width: 80vw;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
+    width: 40vw;
+    display: block;
+    margin: auto;
 
 }
 
@@ -150,8 +158,11 @@ aside p{
     display:block;
     text-align: left;
     align-self: normal;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+}
+
+aside p:first-of-type{
+    margin-top: 3rem;
 }
 
 aside :not(p){
@@ -163,7 +174,9 @@ aside :not(p){
     width: 47%;
     height: 1px;
     background: black;
-    margin-bottom: 15px;
+    margin-bottom: 0.2rem;
+    display: block;
+    margin: auto;
 }
 
 
@@ -223,7 +236,28 @@ footer{
 /*MEDIA QUERIES*/
 
 @media (min-width: 750px) {
+    nav{
+        justify-content: flex-end;
+    }
 
+    header{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .Container{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    article{
+        width: 45vw;
+    }
+
+    aside{
+        width: 18vw;
+    }
+    
 }
 
 @media (min-width: 1000px) {
