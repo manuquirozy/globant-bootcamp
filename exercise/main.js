@@ -1,3 +1,4 @@
+
 let a = fetch('https://randomuser.me/api/?results=10');
 let b= a.then(function(results){
     return results.json();
@@ -12,8 +13,8 @@ let b= a.then(function(results){
         const figCap=document.createElement('figcaption');  
         const buttonFav=document.createElement('button');  
         const t=document.createTextNode("Favorite");
-        const buttonUndo=document.createElement('button');
-        const t2=document.createTextNode("Undo");
+        const buttonDelete=document.createElement('button');
+        const t2=document.createTextNode("Delete");
         img.src=author.picture.large;
         figCap.innerHTML=author.name.first+' '+author.name.last;  
         miSection.append(article);      
@@ -23,21 +24,24 @@ let b= a.then(function(results){
         fig.append(figCap);
         buttonFav.append(t);
         buttonFav.classList.add(author.name.first);
-        buttonUndo.append(t2);
-        buttonUndo.classList.add(author.name.first);
+        buttonDelete.append(t2);
+        buttonDelete.classList.add(author.name.first);
         fig.append(buttonFav);
-        fig.append(buttonUndo);
+        fig.append(buttonDelete);
         buttonFav.addEventListener('click', (click)=>{
-            console.log(click);
-            if(click.path[3]=="aside"){
-                console.log("HOLA");
+            let favArticle= document.querySelector("."+click.srcElement.className);
+            if(click.path[2].className.includes("favorite")){
+                miSection.append(favArticle);      
+                favArticle.classList.remove("favorite");    
             }
-            let favArticle= document.querySelector("."+click.srcElement.className);
-            miAside.append(favArticle);                
+            else{
+                miAside.append(favArticle);      
+                favArticle.classList.add("favorite");    
+            }         
         })
-        buttonUndo.addEventListener('click', (click)=>{ 
+        buttonDelete.addEventListener('click', (click)=>{ 
             let favArticle= document.querySelector("."+click.srcElement.className);
-            miSection.append(favArticle);                
+            favArticle.classList.add("delete");               
         })
     });
 });
