@@ -28,8 +28,8 @@ let b= a.then(function(results){
         fig.append(buttonFav);
         fig.append(buttonUndo);
         buttonFav.addEventListener('click', (click)=>{
-            console.log((click.path[3]).includes("aside"));
-            if(click.path[3]!=="hola"){
+            console.log(click);
+            if(click.path[3]=="aside"){
                 console.log("HOLA");
             }
             let favArticle= document.querySelector("."+click.srcElement.className);
