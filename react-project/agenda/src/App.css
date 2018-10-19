@@ -2,8 +2,110 @@
   text-align: center;
 }
 
+body{
+  background-color: gray;
+  box-sizing: content-box;
+  color: black;
+  background-image: url("city-wallpaper-11.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navigation{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+li{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: darkslategray;
+  margin: 10px;
+  color: white;
+  width: 150px;
+  height: 30px;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/*HOME*/
+
+.containerhome{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:80px;
+}
+
+.welcome{
+  text-align: center;
+  font-size: 150px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.press{
+  text-align: center;
+  font-weight: lighter;
+}
+
+/*CONTACT LIST*/
+
+.contact-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.title{
+  text-align: center;
+  width: 100%;
+}
+
 .contact-card{
-  height: 110px;
-  width: 230px;
-  display: inline-block;
+  height: 200px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(0,0,0,0.7);
+  margin: 20px;
+  position: relative;
+}
+
+figure{
+  width: 120px;
+  position: relative;
+  left: -40px;
+  top: -18px;
+}
+
+.author{
+  margin: 5px;
+  width: 110px;
+  border-radius: 10px;
+}
+
+figcaption{
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  height: 50px;
+  max-width: 90%;
+  font-size: 12px;
+}
+
+button{
+  display: block;
+  margin: 5px auto;
+  color: white;
+  background-color: darkslategray;
+  width: 80px;
+  position: relative;
+  top: -65px;
 }
