@@ -12,17 +12,13 @@ class App extends Component {
     };
   }
 
-  onClickTab(tab){
-    console.log("hello");
-  }
-
   render() {
     return (
       <div className="main">
       <BrowserRouter>
       <div>
         <Navigation/>
-        <Route exact path="/" component={Home} onClickTab={this.onClickTab}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/today" component={Today}/>
         <Route exact path="/thisweek" component={Week}/>
         <Route exact path="/thismonth" component={Month}/>
