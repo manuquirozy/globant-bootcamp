@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+}
+
+body{
+  background-image: url("crumpled-paper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*NAVIGATION*/
+
+.navigation{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-color: white;
+  position: relative;
+  top: -20px;
+  border-bottom: 1px solid rgb(164, 101, 101);
+}
+
+li{
+  margin: 10px;
+  color: white;
+  width: 100px;
+  height: 20px;
+  list-style-type: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*HOME*/
+
+.containerhome{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:100px;
+  color: rgb(164, 101, 101);
+}
+
+.welcome{
+  text-align: center;
+  font-size: 150px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.press{
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(164, 101, 101);
+}
+
+/*LIST*/
+
+h1{
+  font-size: 40px;
+  color: rgb(105, 59, 59);
+}
+
+.to-do-list{
+  color:  rgb(105, 59, 59);
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 20px;
+  border-bottom: 1px solid rgb(164, 101, 101);
+}
+
+.task{
+  margin-left: 40px;  
+}
+
+button, input{
+  color: rgb(164, 101, 101);
+  background-color: ghostwhite;
+  border: 1px solid rgb(164, 101, 101);
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.title{
+  color:rgb(164, 101, 101);
+}
+
+label{
+  color:rgb(105, 59, 59);  
+}
+
+form{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 20px;
+}

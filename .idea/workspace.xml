@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4a49bfa-5942-4fa3-a225-c1a48d961f06" name="Default Changelist" comment="" />
+    <list default="true" id="f4a49bfa-5942-4fa3-a225-c1a48d961f06" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/react-project/agenda/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-project/agenda/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-project/agenda/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-project/agenda/src/App.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +15,11 @@
     <session id="-1593109353">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,24 +53,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/amsterdam/amsterdam.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/amsterdam/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4050">
-              <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="225" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skeleton-landing/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -117,29 +103,37 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/react-project/agenda/node_modules" />
+    <handled-path value="$PROJECT_DIR$/reactnativetest/redux-boilerplate/node_modules" />
+    <handled-path value="$PROJECT_DIR$/todo-list/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/react-project/agenda/package.json" />
+      <path value="$PROJECT_DIR$/reactnativetest/redux-boilerplate/package.json" />
+      <path value="$PROJECT_DIR$/reactnativetest/server/package.json" />
+      <path value="$PROJECT_DIR$/todo-list/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="650" />
     <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="globant-bootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="globant-bootcamp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="globant-bootcamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="globant-bootcamp" type="462c0819:PsiDirectoryNode" />
-              <item name="amsterdam" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="globant-bootcamp" type="b2602c69:ProjectViewProjectNode" />
@@ -161,6 +155,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,6 +190,7 @@
       <updated>1538674361535</updated>
       <workItem from="1538674362759" duration="10772000" />
       <workItem from="1538700000870" duration="253000" />
+      <workItem from="1539906260916" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1538678844261</created>
@@ -214,12 +210,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11025000" />
+    <option name="totallyTimeSpent" value="11030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20510775" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20830008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,7 +326,7 @@
     <entry file="file://$PROJECT_DIR$/amsterdam/amsterdam.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>

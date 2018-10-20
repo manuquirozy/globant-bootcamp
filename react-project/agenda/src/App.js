@@ -41,8 +41,8 @@ const Navigation=(props)=>{
   return(
     <nav>
       <ul className="navigation">
-        <li><Link to={`/`}>Home</Link></li>
-        <li><Link to={`/contactlist`}>Contact List</Link></li>
+        <li><Link style={{ textDecoration: 'none', color: "darkslategrey"}} to={`/`}>Home</Link></li>
+        <li><Link style={{ textDecoration: 'none', color: "darkslategrey"}} to={`/contactlist`}>Contact List</Link></li>
       </ul>
     </nav>
   );

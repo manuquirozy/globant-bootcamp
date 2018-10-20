@@ -15,16 +15,16 @@ body{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  background-color: white;
+  position: relative;
+  top: -20px;
 }
 
 li{
-  border: 1px solid white;
-  border-radius: 10px;
-  background-color: darkslategray;
   margin: 10px;
   color: white;
-  width: 150px;
-  height: 30px;
+  width: 100px;
+  height: 20px;
   list-style-type: none;
   text-align: center;
   text-decoration: none;
@@ -52,6 +52,7 @@ li{
 .press{
   text-align: center;
   font-weight: lighter;
+  color: darkslategray;
 }
 
 /*CONTACT LIST*/
